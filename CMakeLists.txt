@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( fingerMinutiaeExtaction )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( fingerMinutiaeExtaction fingerMinutiaeExtaction.cpp )
+target_link_libraries( fingerMinutiaeExtaction  ${OpenCV_LIBS} )
